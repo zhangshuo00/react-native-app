@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {View, Text, Image, TextInput, AsyncStorage, TouchableOpacity, Alert} from 'react-native';
+import {View, Text, Image, TextInput, AsyncStorage,ActivityIndicator, TouchableOpacity, Alert} from 'react-native';
 import { Icon } from '@ant-design/react-native';
 import { Actions } from 'react-native-router-flux';
 import {myFetch} from '../utils'
@@ -68,7 +68,7 @@ export default class Register extends Component {
                         paddingLeft: 20,
                         }}>
                         <Icon name="user" color="red"/>
-                        <TextInput placeholder="用户名" 
+                        <TextInput placeholder="用户名为admin" 
                             onChangeText={this.userhandle}
                         />
                     </View>
